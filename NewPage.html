@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Newcss.css" />
+<title>Page Title</title>
+</head>
+<body style="background-color:powderblue;">
+<div class="Container">
+    <div class="left_container">
+    
+        <h2 style="color: cornflowerblue;">General Information</h2>
+    
+        <select id="title" name="title" class="styl">
+            <option value="title">Title</option>
+            <option value="soft_eng">Software engineer</option>
+            <option value="senior_eng">Senior software engineer</option>
+            <option value="project_lead">Project lead</option>
+    
+        </select><br><br>
+    
+        <input type="text" id="f_name" placeholder="First Name" class="styl">
+    
+        <input type="text" id="l_name" placeholder="Last Name" class="styl"><br><br>
+    
+        <select id="posi" name="posi" class="styl">
+            <option value="title1">Position</option>
+            <option value="soft_eng">Software engineer</option>
+            <option value="senior_eng">Senior software engineer</option>
+            <option value="project_lead">Project lead</option>
+    
+    
+        </select><br><br>
+    
+        <input type="text" id="company" placeholder="Company" class="styl"><br><br>
+    
+        <input type="text" id="business" placeholder="Business Arena" class="styl">
+    
+        <select id="employee" name="employee" class="styl" >
+            <option value="title1">Employees</option>
+            <option value="soft_eng">Software engineer</option>
+            <option value="senior_eng">Senior software engineer</option>
+            <option value="project_lead">Project lead</option>
+    
+    
+        </select><br><br>
+    
+    
+    </div>
+    
+    <div class="Right_container">
+        <h2 style="color: white;">Contact Details </h2>
+    
+        <input type="text" id="street" placeholder="Street" class="styl1"><br><br>
+    
+        <input type="text" id="add_info" placeholder="Additional information" class="styl1"><br><br>
+
+        <input type="text" id="zip" placeholder="Zipcode" class="styl1">
+        <select id="Place" name="Place" class="styl1">
+            <option value="title1">Place</option>
+            <option value="soft_eng">Software engineer</option>
+            <option value="senior_eng">Senior software engineer</option>
+            <option value="project_lead">Project lead</option>
+    
+    
+        </select><br><br>
+        <select id="Place" name="country" class="styl1">
+            <option value="title1">Country</option>
+            <option value="soft_eng">Software engineer</option>
+            <option value="senior_eng">Senior software engineer</option>
+            <option value="project_lead">Project lead</option>
+    
+    
+        </select><br><br>
+
+        <input type="text" id="street" placeholder="Code" class="styl1">
+        <input type="text" id="street" placeholder="Phone number" class="styl1"><br><br>
+
+        <input type="text" id="street" placeholder="Your Email" class="styl1"><br><br>
+    
+        <input type="checkbox" id="check-box">
+        <label for="check_box" class="label"> I do accept the <a href="">Terms and conditions</a> of your site</label><br><br>
+        <input type="button" value="Register Badge" onclick="return ValidateForm()" class="button">
+    
+    
+    </div>
+
+</div>
+
+<script>
+
+    function ValidateForm(){
+        x = document.getElementById("f_name").value;
+        if(x == "")
+        {
+            alert("First Name must be filled out");
+
+        }
+        x = document.getElementById("l_name").value;
+        if(x == "")
+        {
+            alert("Last Name must be filled out");
+
+        }
+        x = document.getElementById("company").value;
+        if(x == "")
+        {
+            alert("Company must be filled out");
+
+        }
+        x = document.getElementById("business").value;
+        if(x == "")
+        {
+            alert("Business Arena must be filled out");
+
+            
+        }
+        x = document.getElementById("street").value;
+        if(x == "")
+        {
+            alert("All columns must be filled out");
+
+        }
+
+    }
+    
+
+</script>
+    
+
+</body>
+</html>
